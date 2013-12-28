@@ -5,6 +5,7 @@ from django.http import Http404
 from django.utils.translation import ugettext as _
 from django.views.generic.list import ListView
 
+from tagging.cbv import ExtraListView as ListView
 from tagging.models import Tag, TaggedItem
 from tagging.utils import get_tag, get_queryset_and_model
 
